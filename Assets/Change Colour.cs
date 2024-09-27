@@ -19,7 +19,6 @@ public class ChangeColour : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Hit " + player.tag);
             playerMovement.ChangeColor(thisColor);
         }
     }
