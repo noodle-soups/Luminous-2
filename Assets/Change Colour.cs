@@ -5,21 +5,24 @@ using UnityEngine;
 public class ChangeColour : MonoBehaviour
 {
 
-    private Color thisColor;
     [SerializeField] private GameObject player;
-    private PlayerMovement playerMovement;
+    private Player playerScript;
+
+    [SerializeField] private Color thisColor;
+    [SerializeField] private float colorCharge;
 
     private void Start()
     {
         thisColor = GetComponent<Renderer>().material.color;
-        playerMovement = player.GetComponent<PlayerMovement>();
+        playerScript = player.GetComponent<Player>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            playerMovement.ChangeColor(thisColor);
+            playerScript.ChangeColor(thisColor, colorCharge);
+            Debug.Log("Trigger");
         }
     }
 

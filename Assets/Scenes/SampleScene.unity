@@ -441,6 +441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1482228346}
+  thisColor: {r: 0, g: 1, b: 0.46666667, a: 0}
+  colorCharge: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,9 +678,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482228346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79c9cd62e2b363f4c96047233c33404a, type: 3}
+  m_Script: {fileID: 11500000, guid: ba9b7f2ef96c7fd4f89255ff4fd29674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerBaseColor: {r: 0, g: 0.54901963, b: 1, a: 0}
+  maxCharge: 5
+  currentCharge: 0
 --- !u!1 &1944834258
 GameObject:
   m_ObjectHideFlags: 0
